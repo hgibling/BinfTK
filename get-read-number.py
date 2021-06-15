@@ -7,7 +7,7 @@ parser = argparse.ArgumentParser(description='Determine how many reads to simula
 parser.add_argument('-s', '--sequence', type=argparse.FileType('r'), required=True, help='sequence (does not currently support fasta files)')
 parser.add_argument('-c', '--coverage', type=int, required=True, help='desired read depth/coverage of simulated reads')
 parser.add_argument('-r', '--read_length', type=int, required=True, help='desired read length of simulated reads')
-parser.add_argument('-p', '--paired', action="store_false", help='specify if desired simulated reads are to be paired end')
+parser.add_argument('-p', '--paired', action="store_true", help='specify if desired simulated reads are to be paired end')
 
 args = parser.parse_args()
 
